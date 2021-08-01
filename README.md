@@ -23,8 +23,9 @@ DB_PASSWORD = `<you're password>`
 DB_HOST = `<DB host>`  
 DB_PORT = `<DB port>`
 
-In Terminal: + In Folder Server: `npm run start`.  
-             + In Folder Client: `npm run start`.
+In Terminal:  
++ In Folder Server: `npm run start`.  
++ In Folder Client: `npm run start`.
               
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
