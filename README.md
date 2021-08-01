@@ -15,13 +15,13 @@ Follow database.sql and create Database and Table for users and todos.
 Create file : `.env`
 
 In this file add 
-jwtSecret = <you're Jwt secret> 
-PORT = <port>
-DB_NAME = <you're DB name>
-DB_USER = <you're DB user name>
-DB_PASSWORD = <you're password>
-DB_HOST = <DB host>
-DB_PORT = <DB port>
+jwtSecret = `<you're Jwt secret>`
+PORT = `<port>`
+DB_NAME = `<you're DB name>`
+DB_USER = `<you're DB user name>`
+DB_PASSWORD = `<you're password>`
+DB_HOST = `<DB host>`
+DB_PORT = `<DB port>`
 
 In Terminal: -In Folder Server: `npm run start`.
              -In Folder Client: `npm run start`.
