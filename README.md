@@ -12,7 +12,7 @@ In the Terminal write: npm install.
 
 Follow database.sql and create Database and Table for users and todos.
 
-Create file : `.env`
+Create in folder server file : `.env`
 
 In this file add  
 jwtSecret = `<you're Jwt secret>`  
