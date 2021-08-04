@@ -25,8 +25,10 @@ DB_PORT = `<DB port>`
 
 In Terminal:  
 + In Folder Server: `npm run start`.  
-+ In Folder Client: `npm run start`.
-              
++ In Folder Client: `npm run start`.  
+  
+Register new user on Registration page.
+        
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
