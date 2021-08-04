@@ -8,7 +8,9 @@ Download PostgreSQL.
 
 ## Usage
 
-In the Terminal write: npm install.
+In Terminal:  
++ In Folder Server: `npm install`.  
++ In Folder Client: `npm install`. 
 
 Follow database.sql and create Database and Table for users and todos.
 
