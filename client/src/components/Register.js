@@ -44,6 +44,7 @@ const Register = ({ setAuth }) => {
           placeholder="email"
           value={email}
           className="form-control my-3"
+          required
           onChange={(e) => onChange(e)}
         />
         <input
@@ -52,6 +53,7 @@ const Register = ({ setAuth }) => {
           placeholder="name"
           value={name}
           className="form-control my-3"
+          required
           onChange={(e) => onChange(e)}
         />
         <input
@@ -60,6 +62,7 @@ const Register = ({ setAuth }) => {
           placeholder="phone number"
           value={number}
           className="form-control my-3"
+          required
           onChange={(e) => onChange(e)}
         />
         <input
@@ -68,6 +71,7 @@ const Register = ({ setAuth }) => {
           placeholder="address"
           value={address}
           className="form-control my-3"
+          required
           onChange={(e) => onChange(e)}
         />
         <input
@@ -76,6 +80,7 @@ const Register = ({ setAuth }) => {
           placeholder="password"
           value={password}
           className="form-control my-3"
+          required
           onChange={(e) => onChange(e)}
         />
         <button className="btn btn-success btn-block">Register</button>

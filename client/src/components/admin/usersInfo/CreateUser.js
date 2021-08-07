@@ -15,7 +15,7 @@ const CreateUser = ({ setUsersChange }) => {
     setInputs({ ...inputs, [e.target.name]: e.target.value });
   };
 
-  const onSubmit = async (e) => {
+  const onSubmitForm = async (e) => {
     e.preventDefault();
     try {
       const myHeaders = new Headers();
@@ -29,6 +29,13 @@ const CreateUser = ({ setUsersChange }) => {
         body: JSON.stringify(body),
       });
       setUsersChange(true);
+      setInputs({
+        email: "",
+        name: "",
+        number: "",
+        address: "",
+        password: "",
+      });
     } catch (error) {
       console.error(error.message);
     }
@@ -67,64 +74,63 @@ const CreateUser = ({ setUsersChange }) => {
             </div>
 
             <div className="modal-body">
-              <input
-                type="email"
-                name="email"
-                placeholder="email"
-                value={email}
-                className="form-control my-3"
-                onChange={(e) => onChange(e)}
-              />
-              <input
-                type="text"
-                name="name"
-                placeholder="name"
-                value={name}
-                className="form-control my-3"
-                onChange={(e) => onChange(e)}
-              />
-              <input
-                type="text"
-                name="number"
-                placeholder="phone number"
-                value={number}
-                className="form-control my-3"
-                onChange={(e) => onChange(e)}
-              />
-              <input
-                type="text"
-                name="address"
-                placeholder="address"
-                value={address}
-                className="form-control my-3"
-                onChange={(e) => onChange(e)}
-              />
-              <input
-                type="password"
-                name="password"
-                placeholder="password"
-                value={password}
-                className="form-control my-3"
-                onChange={(e) => onChange(e)}
-              />
-            </div>
-
-            <div className="modal-footer">
-              <button
-                type="button"
-                className="btn btn-warning"
-                data-dismiss="modal"
-                onClick={(e) => onSubmit(e)}
-              >
-                Register User
-              </button>
-              <button
-                type="button"
-                className="btn btn-secondary"
-                data-dismiss="modal"
-              >
-                Close
-              </button>
+              <form onSubmit={onSubmitForm}>
+                <input
+                  required
+                  type="email"
+                  name="email"
+                  placeholder="email"
+                  value={email}
+                  className="form-control my-3"
+                  onChange={(e) => onChange(e)}
+                />
+                <input
+                  required
+                  type="text"
+                  name="name"
+                  placeholder="name"
+                  value={name}
+                  className="form-control my-3"
+                  onChange={(e) => onChange(e)}
+                />
+                <input
+                  type="text"
+                  name="number"
+                  placeholder="phone number"
+                  value={number}
+                  className="form-control my-3"
+                  onChange={(e) => onChange(e)}
+                />
+                <input
+                  type="text"
+                  name="address"
+                  placeholder="address"
+                  value={address}
+                  className="form-control my-3"
+                  onChange={(e) => onChange(e)}
+                />
+                <input
+                  required
+                  type="password"
+                  name="password"
+                  placeholder="password"
+                  value={password}
+                  className="form-control my-3"
+                  onChange={(e) => onChange(e)}
+                />
+                <div className="d-flex justify-content-around mt-5">
+                  <button type="submit" className="btn btn-warning">
+                    Register User
+                  </button>
+                  <button
+                    type="button"
+                    className="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
